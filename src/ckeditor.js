@@ -90,11 +90,14 @@ InlineEditor.defaultConfig = {
 		]
 	},
 	image: {
+		styles: [
+			'alignLeft', 'alignCenter', 'alignRight', 'full'
+		],
 		toolbar: [
+			'imageStyle:alignLeft',
+			'imageStyle:alignCenter',
+			'imageStyle:alignRight',
 			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
 		]
 	},
 	table: {
