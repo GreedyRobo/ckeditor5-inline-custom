@@ -33,6 +33,7 @@ import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperti
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import Mention from '@ckeditor/ckeditor5-mention/src/mention';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -63,7 +64,8 @@ InlineEditor.builtinPlugins = [
 	TableToolbar,
 	TableProperties,
 	TableCellProperties,
-	TextTransformation
+	TextTransformation,
+	Mention
 ];
 
 // Editor configuration.
