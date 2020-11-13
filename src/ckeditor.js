@@ -32,7 +32,7 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
-import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import Base64UploadAdapter from './adapters/base64uploadadapter'
 import Mention from '@ckeditor/ckeditor5-mention/src/mention';
 
 export default class InlineEditor extends InlineEditorBase {}
