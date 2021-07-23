@@ -73,6 +73,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-alignment": "^29.0.0",
     "@ckeditor/ckeditor5-mention": "^23.1.0"
   }
 }

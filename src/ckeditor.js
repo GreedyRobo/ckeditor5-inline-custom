@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 import Base64UploadAdapter from './adapters/base64uploadadapter'
 import Mention from '@ckeditor/ckeditor5-mention/src/mention';
@@ -45,6 +46,7 @@ InlineEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Alignment,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
