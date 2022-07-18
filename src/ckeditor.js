@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 import Base64UploadAdapter from './adapters/base64uploadadapter'
 import Mention from '@ckeditor/ckeditor5-mention/src/mention';
@@ -40,6 +41,7 @@ export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
+	Font,
 	Essentials,
 	UploadAdapter,
 	Base64UploadAdapter,
@@ -72,9 +74,22 @@ InlineEditor.builtinPlugins = [
 
 // Editor configuration.
 InlineEditor.defaultConfig = {
+	fontSize: {
+		options: [
+			7,
+			9,
+			11,
+			13,
+			'default',
+			17,
+			19,
+			21
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
+			'fontSize',
 			'|',
 			'bold',
 			'italic',
